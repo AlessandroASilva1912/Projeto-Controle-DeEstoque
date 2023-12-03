@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Controle de Estoque</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Estoque</h1>
+        <form id="FormularioInventorio">
+            <label for="NomeProduto">Nome do Produto:</label>
+            <input type="text" id="NomeProduto" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" required>
+
+            <button type="button" onclick="addProduct()">Adicionar Produto</button>
+        </form>
+
+        <div id="InventarioLista">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
